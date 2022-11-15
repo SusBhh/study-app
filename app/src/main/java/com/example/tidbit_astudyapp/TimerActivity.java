@@ -3,6 +3,8 @@ package com.example.tidbit_astudyapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 
 public class TimerActivity extends AppCompatActivity {
 
@@ -10,5 +12,9 @@ public class TimerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timer);
+    }
+    public void onBackPressed(View view) {
+        Log.d("Example: ", "Clicked back");
+        finish();
     }
 }
