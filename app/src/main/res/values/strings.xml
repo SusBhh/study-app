@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Tidbit - A Study App</string>
+    <string name="back_button">Back Button</string>
 </resources>
