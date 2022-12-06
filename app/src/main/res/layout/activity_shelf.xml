@@ -6,25 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".ShelfActivity">
 
-    <TextView
-        android:id="@+id/shelf_title_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="550dp"
-        android:layout_marginEnd="40dp"
-        android:text="Shelf"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <GridLayout
         android:id="@+id/mainGrid"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="36dp"
         android:layout_weight="8"
         android:alignmentMode="alignMargins"
         android:columnCount="3"
@@ -34,7 +23,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/shelf_title_textview">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <!-- Row 1 -->
         <!-- Column 1 -->
@@ -54,8 +44,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
-                android:layout_marginEnd="0dp"
                 android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
                 android:layout_marginBottom="0dp"
                 android:onClick="onProfilePressed"
                 android:text="Profile" />
@@ -75,16 +65,21 @@
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp">
 
-            <Button
+            <ImageButton
                 android:id="@+id/shopping_list_button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginStart="0dp"
-                android:layout_marginEnd="0dp"
                 android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
                 android:layout_marginBottom="0dp"
+                android:background="@null"
                 android:onClick="onShoppingListPressed"
-                android:text="Shopping List" />
+                android:scaleType="fitXY"
+                android:text="Shopping List"
+                app:srcCompat="@drawable/todo_list_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
 
         </androidx.cardview.widget.CardView>
 
@@ -106,8 +101,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
-                android:layout_marginEnd="0dp"
                 android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
                 android:layout_marginBottom="0dp"
                 android:onClick="onCookbookPressed"
                 android:text="Cookbook" />
@@ -126,6 +121,7 @@
             android:layout_marginBottom="6dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -138,19 +134,19 @@
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
+                    android:background="@null"
                     android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/f1"
-                    android:background="@null"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
                     android:text="5min"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:layout_gravity="center_horizontal|center_vertical"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
@@ -183,19 +179,19 @@
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
+                    android:background="@null"
                     android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/f1"
-                    android:background="@null"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
                     android:text="5min"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:layout_gravity="center_horizontal|center_vertical"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
@@ -228,19 +224,19 @@
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
+                    android:background="@null"
                     android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/f1"
-                    android:background="@null"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
                     android:text="5min"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:layout_gravity="center_horizontal|center_vertical"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
@@ -273,19 +269,19 @@
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
+                    android:background="@null"
                     android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/f1"
-                    android:background="@null"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
                     android:text="5min"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:layout_gravity="center_horizontal|center_vertical"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
@@ -318,19 +314,19 @@
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
+                    android:background="@null"
                     android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/f1"
-                    android:background="@null"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
                     android:text="5min"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:layout_gravity="center_horizontal|center_vertical"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
@@ -363,20 +359,20 @@
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
+                    android:background="@null"
                     android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/f1"
-                    android:background="@null"
                     tools:ignore="SpeakableTextPresentCheck" />
 
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
                     android:text="5min"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:layout_gravity="center_horizontal|center_vertical"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
@@ -409,19 +405,19 @@
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
+                    android:background="@null"
                     android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/f1"
-                    android:background="@null"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
                     android:text="5min"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:layout_gravity="center_horizontal|center_vertical"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
@@ -454,19 +450,19 @@
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
+                    android:background="@null"
                     android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/f1"
-                    android:background="@null"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
                     android:text="5min"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:layout_gravity="center_horizontal|center_vertical"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
@@ -499,19 +495,19 @@
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
+                    android:background="@null"
                     android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/f1"
-                    android:background="@null"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
                     android:text="5min"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:layout_gravity="center_horizontal|center_vertical"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
@@ -544,19 +540,19 @@
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
+                    android:background="@null"
                     android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/f1"
-                    android:background="@null"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
                     android:text="5min"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:layout_gravity="center_horizontal|center_vertical"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
@@ -589,19 +585,19 @@
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
+                    android:background="@null"
                     android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/f1"
-                    android:background="@null"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
                     android:text="5min"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:layout_gravity="center_horizontal|center_vertical"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
@@ -634,19 +630,19 @@
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
+                    android:background="@null"
                     android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/f1"
-                    android:background="@null"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
                     android:text="5min"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:layout_gravity="center_horizontal|center_vertical"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
@@ -678,19 +674,19 @@
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
+                    android:background="@null"
                     android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/f1"
-                    android:background="@null"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
                     android:text="5min"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:layout_gravity="center_horizontal|center_vertical"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
@@ -723,19 +719,19 @@
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
+                    android:background="@null"
                     android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/f1"
-                    android:background="@null"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
                     android:text="5min"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:layout_gravity="center_horizontal|center_vertical"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
@@ -768,19 +764,19 @@
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
+                    android:background="@null"
                     android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/f1"
-                    android:background="@null"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
                     android:text="5min"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:layout_gravity="center_horizontal|center_vertical"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
