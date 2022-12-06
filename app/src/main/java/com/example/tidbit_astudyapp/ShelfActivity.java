@@ -13,6 +13,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import java.util.Vector;
+
 // Basically Main activity
 public class ShelfActivity extends AppCompatActivity {
 
@@ -23,6 +25,9 @@ public class ShelfActivity extends AppCompatActivity {
     // Sensor variables
     private SensorManager sensorManager;
     private Sensor sensorLight;
+
+    // Foods array
+    private Vector<FoodItem> FoodsList = new Vector<FoodItem>(15);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,8 +54,17 @@ public class ShelfActivity extends AppCompatActivity {
             public void onAccuracyChanged(Sensor sensor, int i) {
             }
         };
-
         sensorManager.registerListener(sensorEventListenerLight, sensorLight, SensorManager.SENSOR_DELAY_NORMAL);
+
+        // Create Foods List
+        int timeCount = 0;
+        for(int i = 1; i <= 15; i++) {
+            String tempFoodId = "f" + Integer.toString(i);
+            if(i % 3 == 0) {timeCount += 15;}
+            FoodItem tempFoodItem = new FoodItem(tempFoodId, timeCount);
+            FoodsList.add(tempFoodItem);
+        }
+
     }
 
     private void changeDayNightTheme(float floatSensorValue, float lightThreshold) {
