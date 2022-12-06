@@ -6,90 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".ShelfActivity">
 
-    <GridLayout
-        android:id="@+id/bgGrid"
+    <ImageView
+        android:id="@+id/imageView5"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="36dp"
-        android:layout_weight="8"
-        android:alignmentMode="alignMargins"
-        android:columnCount="1"
-        android:columnOrderPreserved="false"
-        android:padding="6dp"
-        android:rowCount="6"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-
-        <ImageView
-            android:id="@+id/imageView0"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_rowWeight="1"
-            android:layout_column="0"
-            android:scaleType="fitEnd"
-            app:srcCompat="@drawable/oneshelf" />
-
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="1"
-            android:layout_rowWeight="1"
-            android:layout_column="0"
-            android:scaleType="fitEnd"
-            app:srcCompat="@drawable/oneshelf" />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="2"
-            android:layout_rowWeight="1"
-            android:layout_column="0"
-            android:scaleType="fitEnd"
-            app:srcCompat="@drawable/oneshelf" />
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="3"
-            android:layout_rowWeight="1"
-            android:layout_column="0"
-            android:scaleType="fitEnd"
-            app:srcCompat="@drawable/oneshelf" />
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="4"
-            android:layout_rowWeight="1"
-            android:layout_column="0"
-            android:scaleType="fitEnd"
-            app:srcCompat="@drawable/oneshelf" />
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="5"
-            android:layout_rowWeight="1"
-            android:layout_column="0"
-            android:scaleType="fitEnd"
-            app:srcCompat="@drawable/oneshelf"
-            android:contentDescription="TODO" />
-
-
-    </GridLayout>
+        app:srcCompat="@drawable/oneshelf" />
 
     <GridLayout
         android:id="@+id/mainGrid"
@@ -342,7 +268,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|bottom"
-                    android:layout_margin="3dp"
                     android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
@@ -405,7 +330,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|bottom"
-                    android:layout_margin="3dp"
                     android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
@@ -464,11 +388,10 @@
                     app:srcCompat="@drawable/f4"
                     tools:ignore="SpeakableTextPresentCheck" />
 
-                                <LinearLayout
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|bottom"
-                    android:layout_margin="3dp"
                     android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
@@ -528,11 +451,10 @@
                     app:srcCompat="@drawable/f5"
                     tools:ignore="SpeakableTextPresentCheck" />
 
-                                <LinearLayout
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|bottom"
-                    android:layout_margin="3dp"
                     android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
@@ -593,11 +515,10 @@
                     tools:ignore="SpeakableTextPresentCheck" />
 
 
-                                <LinearLayout
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|bottom"
-                    android:layout_margin="3dp"
                     android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
@@ -657,11 +578,10 @@
                     app:srcCompat="@drawable/f7"
                     tools:ignore="SpeakableTextPresentCheck" />
 
-                                <LinearLayout
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|bottom"
-                    android:layout_margin="3dp"
                     android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
@@ -721,11 +641,10 @@
                     app:srcCompat="@drawable/f8"
                     tools:ignore="SpeakableTextPresentCheck" />
 
-                                <LinearLayout
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|bottom"
-                    android:layout_margin="3dp"
                     android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
@@ -785,11 +704,10 @@
                     app:srcCompat="@drawable/f9"
                     tools:ignore="SpeakableTextPresentCheck" />
 
-                                <LinearLayout
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|bottom"
-                    android:layout_margin="3dp"
                     android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
@@ -849,11 +767,10 @@
                     app:srcCompat="@drawable/f10"
                     tools:ignore="SpeakableTextPresentCheck" />
 
-                                <LinearLayout
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|bottom"
-                    android:layout_margin="3dp"
                     android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
@@ -913,11 +830,10 @@
                     app:srcCompat="@drawable/f11"
                     tools:ignore="SpeakableTextPresentCheck" />
 
-                                <LinearLayout
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|bottom"
-                    android:layout_margin="3dp"
                     android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
@@ -977,11 +893,10 @@
                     app:srcCompat="@drawable/f12"
                     tools:ignore="SpeakableTextPresentCheck" />
 
-                                <LinearLayout
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|bottom"
-                    android:layout_margin="3dp"
                     android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
@@ -1040,11 +955,10 @@
                     app:srcCompat="@drawable/f1"
                     tools:ignore="SpeakableTextPresentCheck" />
 
-                                <LinearLayout
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|bottom"
-                    android:layout_margin="3dp"
                     android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
@@ -1104,11 +1018,10 @@
                     app:srcCompat="@drawable/f1"
                     tools:ignore="SpeakableTextPresentCheck" />
 
-                                <LinearLayout
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|bottom"
-                    android:layout_margin="3dp"
                     android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
@@ -1168,11 +1081,10 @@
                     app:srcCompat="@drawable/f1"
                     tools:ignore="SpeakableTextPresentCheck" />
 
-                                <LinearLayout
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|bottom"
-                    android:layout_margin="3dp"
                     android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
