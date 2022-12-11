@@ -28,6 +28,7 @@ public class TimerActivity extends AppCompatActivity {
     private long mStartTimeInMillis;
     private long mTimeLeftInMillis;
     private long mEndTime;
+    private long mTimerTempMinute;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,7 @@ public class TimerActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String input = mEditTextInput.getText().toString();
+                mTimerTempMinute = Long.parseLong(mEditTextInput.getText().toString());
                 if (input.length() == 0) {
                     Toast.makeText(TimerActivity.this, "Field can't be empty", Toast.LENGTH_SHORT).show();
                     return;
