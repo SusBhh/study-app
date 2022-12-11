@@ -21,7 +21,7 @@ public class FoodItem {
     }
 
     public String getFoodID() {return this.foodID;}
-    public void setFoodIDe(String newFoodID) {this.name = newFoodID;}
+    public void setFoodID(String newFoodID) {this.name = newFoodID;}
     public String getName() {return this.name;}
     public void setName(String newName) {this.name = newName;}
     public int getQuantity() {return this.quantity;}
