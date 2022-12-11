@@ -254,7 +254,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/imageButton2"
+                    android:id="@+id/f2"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
@@ -270,6 +270,7 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
                     <TextView
+                        android:id="@+id/st2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -279,6 +280,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
+                        android:id="@+id/sq2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -316,7 +318,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/imageButton3"
+                    android:id="@+id/f3"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
@@ -332,6 +334,7 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
                     <TextView
+                        android:id="@+id/st3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -341,6 +344,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
+                        android:id="@+id/sq3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -378,7 +382,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/imageButton4"
+                    android:id="@+id/f4"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
@@ -394,6 +398,7 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
                     <TextView
+                        android:id="@+id/st4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -403,6 +408,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
+                        android:id="@+id/sq4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -441,7 +447,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/imageButton5"
+                    android:id="@+id/f5"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
@@ -457,6 +463,7 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
                     <TextView
+                        android:id="@+id/st5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -466,6 +473,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
+                        android:id="@+id/sq5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -504,7 +512,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/imageButton6"
+                    android:id="@+id/f6"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
@@ -521,6 +529,7 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
                     <TextView
+                        android:id="@+id/st6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -530,6 +539,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
+                        android:id="@+id/sq6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -568,7 +578,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/imageButton7"
+                    android:id="@+id/f7"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
@@ -584,6 +594,7 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
                     <TextView
+                        android:id="@+id/st7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -593,6 +604,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
+                        android:id="@+id/sq7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -631,7 +643,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/imageButton8"
+                    android:id="@+id/f8"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
@@ -647,6 +659,7 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
                     <TextView
+                        android:id="@+id/st8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -656,6 +669,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
+                        android:id="@+id/sq8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -694,7 +708,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/imageButton9"
+                    android:id="@+id/f9"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
@@ -710,6 +724,7 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
                     <TextView
+                        android:id="@+id/st9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -719,6 +734,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
+                        android:id="@+id/sq9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -757,7 +773,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/imageButton10"
+                    android:id="@+id/f10"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
@@ -773,6 +789,7 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
                     <TextView
+                        android:id="@+id/st10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -782,6 +799,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
+                        android:id="@+id/sq10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -820,7 +838,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/imageButton11"
+                    android:id="@+id/f11"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
@@ -836,6 +854,7 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
                     <TextView
+                        android:id="@+id/st11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -845,6 +864,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
+                        android:id="@+id/sq11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -883,7 +903,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/imageButton12"
+                    android:id="@+id/f12"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
@@ -899,6 +919,7 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
                     <TextView
+                        android:id="@+id/st12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -908,6 +929,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
+                        android:id="@+id/sq12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -945,14 +967,14 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/imageButton13"
+                    android:id="@+id/f13"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@null"
                     android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/f1"
+                    app:srcCompat="@drawable/f13"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <LinearLayout
@@ -961,6 +983,7 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
                     <TextView
+                        android:id="@+id/st13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -969,9 +992,11 @@
                         android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
+
                     <TextView
+                        android:id="@+id/sq13"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal|bottom"
                         android:layout_marginLeft="10dp"
                         android:text="0"
@@ -1008,14 +1033,14 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/imageButton14"
+                    android:id="@+id/f14"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@null"
                     android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/f1"
+                    app:srcCompat="@drawable/f14"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <LinearLayout
@@ -1024,6 +1049,7 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
                     <TextView
+                        android:id="@+id/st14"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -1032,7 +1058,9 @@
                         android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
+
                     <TextView
+                        android:id="@+id/sq14"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -1071,14 +1099,14 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/imageButton15"
+                    android:id="@+id/f15"
                     android:layout_width="65dp"
-                    android:layout_height="65dp"
+                    android:layout_height="49dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@null"
                     android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/f1"
+                    app:srcCompat="@drawable/f15"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <LinearLayout
@@ -1087,6 +1115,7 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
                     <TextView
+                        android:id="@+id/st15"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -1095,7 +1124,9 @@
                         android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
+
                     <TextView
+                        android:id="@+id/sq15"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
