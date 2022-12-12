@@ -2,25 +2,34 @@ package com.example.tidbit_astudyapp;
 
 
 import android.content.Context;
+import android.widget.TextView;
 
-public class FoodItem {
+import androidx.appcompat.app.AppCompatActivity;
+
+import org.w3c.dom.Text;
+
+public class FoodItem extends AppCompatActivity {
     private static Context context;
 
     public FoodItem(Context context) {this.context = context;};
 
-    private String foodID;
-    private String name;
+    private int foodID;
+    private String timeTextID;
     private int quantity;
     private int time;
+    private TextView timeText;
+    private TextView quantityText;
 
-    public FoodItem(String foodID, int time) {
+    public FoodItem(int foodID, int time) {
         this.foodID = foodID;
-        this.name = "";
+        this.timeTextID = "st" + Integer.toString(foodID);
         this.quantity = 0;
         this.time = time;
+        this.timeText = findViewById(R.id.timeTextID);
+
     }
 
-    public String getFoodID() {return this.foodID;}
+    public int getFoodID() {return this.foodID;}
     public void setFoodID(String newFoodID) {this.name = newFoodID;}
     public String getName() {return this.name;}
     public void setName(String newName) {this.name = newName;}

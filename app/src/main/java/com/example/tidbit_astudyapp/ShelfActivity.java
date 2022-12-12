@@ -27,7 +27,7 @@ public class ShelfActivity extends AppCompatActivity {
     private Sensor sensorLight;
 
     // Foods array
-    private Vector<FoodItem> FoodsList = new Vector<FoodItem>(15);
+    public static Vector<FoodItem> FoodsList = new Vector<FoodItem>(15);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,10 +58,11 @@ public class ShelfActivity extends AppCompatActivity {
 
         // Create Foods List
         int timeCount = 0;
-        for(int i = 1; i <= 15; i++) {
-            String tempFoodId = "f" + Integer.toString(i);
-            if(i % 3 == 0) {timeCount += 15;}
-            FoodItem tempFoodItem = new FoodItem(tempFoodId, timeCount);
+        for(int i = 0; i <= 13; i++) {
+            //String tempFoodId = "f" + Integer.toString(i);
+            if(i == 2) {timeCount += 5;}
+            else if(i % 3 == 0) {timeCount += 15;}
+            FoodItem tempFoodItem = new FoodItem(i, timeCount);
             FoodsList.add(tempFoodItem);
         }
 

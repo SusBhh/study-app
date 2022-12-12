@@ -254,7 +254,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/f2"
+                    android:id="@+id/f0"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
@@ -270,7 +270,7 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
                     <TextView
-                        android:id="@+id/st2"
+                        android:id="@+id/st0"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -280,7 +280,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
-                        android:id="@+id/sq2"
+                        android:id="@+id/sq0"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -318,7 +318,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/f3"
+                    android:id="@+id/f1"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
@@ -334,7 +334,7 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
                     <TextView
-                        android:id="@+id/st3"
+                        android:id="@+id/st1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -344,7 +344,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
-                        android:id="@+id/sq3"
+                        android:id="@+id/sq1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -382,7 +382,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/f4"
+                    android:id="@+id/f2"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
@@ -398,7 +398,7 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
                     <TextView
-                        android:id="@+id/st4"
+                        android:id="@+id/st2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -408,7 +408,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
-                        android:id="@+id/sq4"
+                        android:id="@+id/sq2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -447,7 +447,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/f5"
+                    android:id="@+id/f3"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
@@ -455,6 +455,137 @@
                     android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/f5"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/st3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:text="5min"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/sq3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_marginLeft="10dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 3 -->
+        <!-- Column 3 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="6dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+            android:backgroundTint="@android:color/transparent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_margin="3dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/f4"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@null"
+                    android:onClick="onTimerPressed"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/f6"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/st4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:text="5min"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/sq4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_marginLeft="10dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 4 -->
+        <!-- Column 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="6dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+            android:backgroundTint="@android:color/transparent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_margin="3dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/f5"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@null"
+                    android:onClick="onTimerPressed"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/f7"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <LinearLayout
@@ -490,8 +621,8 @@
 
         </androidx.cardview.widget.CardView>
 
-        <!-- Row 3 -->
-        <!-- Column 3 -->
+        <!-- Row 4 -->
+        <!-- Column 2 -->
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -519,9 +650,8 @@
                     android:background="@null"
                     android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/f6"
+                    app:srcCompat="@drawable/f8"
                     tools:ignore="SpeakableTextPresentCheck" />
-
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -557,7 +687,7 @@
         </androidx.cardview.widget.CardView>
 
         <!-- Row 4 -->
-        <!-- Column 1 -->
+        <!-- Column 3 -->
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -585,7 +715,7 @@
                     android:background="@null"
                     android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/f7"
+                    app:srcCompat="@drawable/f9"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <LinearLayout
@@ -621,8 +751,8 @@
 
         </androidx.cardview.widget.CardView>
 
-        <!-- Row 4 -->
-        <!-- Column 2 -->
+        <!-- Row 5 -->
+        <!-- Column 1 -->
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -650,7 +780,7 @@
                     android:background="@null"
                     android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/f8"
+                    app:srcCompat="@drawable/f10"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <LinearLayout
@@ -686,8 +816,8 @@
 
         </androidx.cardview.widget.CardView>
 
-        <!-- Row 4 -->
-        <!-- Column 3 -->
+        <!-- Row 5 -->
+        <!-- Column 2 -->
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -715,7 +845,7 @@
                     android:background="@null"
                     android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/f9"
+                    app:srcCompat="@drawable/f11"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <LinearLayout
@@ -752,7 +882,7 @@
         </androidx.cardview.widget.CardView>
 
         <!-- Row 5 -->
-        <!-- Column 1 -->
+        <!-- Column 3 -->
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -780,7 +910,7 @@
                     android:background="@null"
                     android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/f10"
+                    app:srcCompat="@drawable/f12"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <LinearLayout
@@ -800,136 +930,6 @@
                         android:textStyle="bold" />
                     <TextView
                         android:id="@+id/sq10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal|bottom"
-                        android:layout_marginLeft="10dp"
-                        android:text="0"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <!-- Row 5 -->
-        <!-- Column 2 -->
-        <androidx.cardview.widget.CardView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_marginLeft="6dp"
-            android:layout_marginRight="6dp"
-            android:layout_marginBottom="6dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="0dp"
-            android:backgroundTint="@android:color/transparent">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|bottom"
-                android:layout_margin="3dp"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:id="@+id/f11"
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
-                    android:layout_gravity="center_horizontal"
-                    android:background="@null"
-                    android:onClick="onTimerPressed"
-                    android:scaleType="fitXY"
-                    app:srcCompat="@drawable/f11"
-                    tools:ignore="SpeakableTextPresentCheck" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|bottom"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:id="@+id/st11"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal|bottom"
-                        android:text="5min"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-                    <TextView
-                        android:id="@+id/sq11"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal|bottom"
-                        android:layout_marginLeft="10dp"
-                        android:text="0"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <!-- Row 5 -->
-        <!-- Column 3 -->
-        <androidx.cardview.widget.CardView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_marginLeft="6dp"
-            android:layout_marginRight="6dp"
-            android:layout_marginBottom="6dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="0dp"
-            android:backgroundTint="@android:color/transparent">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|bottom"
-                android:layout_margin="3dp"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:id="@+id/f12"
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
-                    android:layout_gravity="center_horizontal"
-                    android:background="@null"
-                    android:onClick="onTimerPressed"
-                    android:scaleType="fitXY"
-                    app:srcCompat="@drawable/f12"
-                    tools:ignore="SpeakableTextPresentCheck" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|bottom"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:id="@+id/st12"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal|bottom"
-                        android:text="5min"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-                    <TextView
-                        android:id="@+id/sq12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -967,7 +967,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/f13"
+                    android:id="@+id/f11"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
@@ -983,7 +983,7 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
                     <TextView
-                        android:id="@+id/st13"
+                        android:id="@+id/st11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -994,7 +994,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/sq13"
+                        android:id="@+id/sq11"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal|bottom"
@@ -1033,7 +1033,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/f14"
+                    android:id="@+id/f12"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
@@ -1049,7 +1049,7 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
                     <TextView
-                        android:id="@+id/st14"
+                        android:id="@+id/st12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -1060,7 +1060,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/sq14"
+                        android:id="@+id/sq12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -1099,7 +1099,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/f15"
+                    android:id="@+id/f13"
                     android:layout_width="65dp"
                     android:layout_height="49dp"
                     android:layout_gravity="center_horizontal"
@@ -1115,7 +1115,7 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
                     <TextView
-                        android:id="@+id/st15"
+                        android:id="@+id/st13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -1126,7 +1126,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/sq15"
+                        android:id="@+id/sq13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"

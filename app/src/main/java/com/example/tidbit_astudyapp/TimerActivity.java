@@ -198,6 +198,7 @@ public class TimerActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+        int foodGot = 0, newQuantity = 0;
 
         SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
 
@@ -217,6 +218,26 @@ public class TimerActivity extends AppCompatActivity {
                 mTimerRunning = false;
                 updateCountDownText();
                 updateWatchInterface();
+
+                //edit quantity of food
+                if (0 < mTimerTempMinute) {
+                    foodGot = (int)Math.random()*(3);
+                    //mTimerTempMinute <= 5 //0,1
+                    if (5 <= mTimerTempMinute && mTimerTempMinute < 20) {
+                        foodGot = 2; //2
+                    } else if (20 <= mTimerTempMinute && mTimerTempMinute < 35) {
+                        foodGot += 3;//3,4,5
+                    } else if (35 <= mTimerTempMinute && mTimerTempMinute < 50) {
+                        foodGot += 6;//6,7,8
+                    } else if (50 <= mTimerTempMinute && mTimerTempMinute < 65) {
+                        foodGot += 9;//9,10,11
+                    } else if (65 < mTimerTempMinute) {
+                        foodGot += 12;//12,13
+                    }
+                }
+                newQuantity = ShelfActivity.FoodsList.get(foodGot).getQuantity() + 1;
+                ShelfActivity.FoodsList.get(foodGot).setQuantity(newQuantity);
+
             } else {
                 startTimer();
             }
