@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Context;
+import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -11,9 +12,17 @@ import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
+
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 
 public class ProfileActivity extends AppCompatActivity {
 
@@ -28,6 +37,12 @@ public class ProfileActivity extends AppCompatActivity {
     private SensorManager sensorManager;
     private Sensor sensorLight;
 
+    // Google Sign Out
+    GoogleSignInOptions gso;
+    GoogleSignInClient gsc;
+    TextView name,email;
+    Button signOutBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +52,6 @@ public class ProfileActivity extends AppCompatActivity {
         savedInformation = new SavedInformation(this);
         seekBar = (SeekBar)findViewById(R.id.light_threshold_seekbar);
         textView = (TextView)findViewById(R.id.light_threshold_text);
-        editText = (EditText)findViewById(R.id.color_plain_text_view);
 
         lightThreshold = savedInformation.getFloat("lightThreshold");
         seekBar.setProgress((int)savedInformation.getFloat("lightThreshold"));
@@ -83,6 +97,30 @@ public class ProfileActivity extends AppCompatActivity {
         };
 
         sensorManager.registerListener(sensorEventListenerLight, sensorLight, SensorManager.SENSOR_DELAY_NORMAL);
+
+        // Profile Info and Sign Out
+        name = findViewById(R.id.name);
+        email = findViewById(R.id.email);
+        signOutBtn = findViewById(R.id.signout);
+
+        gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
+        gsc = GoogleSignIn.getClient(this,gso);
+
+        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
+        if(acct!=null){
+            String personName = acct.getDisplayName();
+            String personEmail = acct.getEmail();
+            name.setText(personName);
+            email.setText(personEmail);
+        }
+
+        signOutBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                signOut();
+            }
+        });
+
     }
 
     public void onColorChangeClick(View view) {
@@ -101,6 +139,17 @@ public class ProfileActivity extends AppCompatActivity {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         }
     }
+
+    void signOut(){
+        gsc.signOut().addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(Task<Void> task) {
+                finish();
+                startActivity(new Intent(ProfileActivity.this,LoginActivity.class));
+            }
+        });
+    }
+
     public void onBackPressed(View view) {
         Log.d("Example: ", "Clicked back");
         finish();
