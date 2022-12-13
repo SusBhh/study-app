@@ -27,7 +27,7 @@ public class ShelfActivity extends AppCompatActivity {
     private Sensor sensorLight;
 
     // Foods array
-    private Vector<FoodItem> FoodsList = new Vector<FoodItem>(15);
+    private Vector<FoodItem> FoodsList = new Vector<FoodItem>(14);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,5 +94,9 @@ public class ShelfActivity extends AppCompatActivity {
     public void onProfilePressed(View view) {
         Intent myIntent = new Intent(getBaseContext(), ProfileActivity.class);
         startActivity(myIntent);
+    }
+
+    public Vector<FoodItem> getFoodsList() {
+        return this.FoodsList;
     }
 }
