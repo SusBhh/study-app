@@ -133,4 +133,8 @@ public class ShelfActivity extends AppCompatActivity {
         Intent myIntent = new Intent(getBaseContext(), ProfileActivity.class);
         startActivity(myIntent);
     }
+
+    public Vector<FoodItem> getFoodsList() {
+        return this.FoodsList;
+    }
 }

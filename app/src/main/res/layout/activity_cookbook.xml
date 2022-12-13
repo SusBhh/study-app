@@ -29,10 +29,12 @@
         android:onClick="onBackPressed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:srcCompat="@drawable/back_button" />
+        app:srcCompat="@drawable/back_button_black"
+        android:forceDarkAllowed="true"/>
 
     <TextView
         android:id="@+id/cookbook_title_textview"
+        android:textColor="@android:color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
@@ -84,61 +86,17 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:id="@+id/imageView1"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_gravity="left"
-                        android:background="@null"
-                        android:onClick="onTimerPressed"
-                        android:scaleType="fitXY"
-                        app:srcCompat="@drawable/f1"
-                        tools:ignore="SpeakableTextPresentCheck" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:layout_marginLeft="12dp"
-                        android:text="15min"
-                        android:textAlignment="gravity"
-                        android:textColor="@android:color/black"
-                        android:textSize="24sp"
-                        android:textStyle="italic" />
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_marginLeft="12dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="12dp"
-                android:backgroundTint="@android:color/transparent"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="0dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|bottom"
-                    android:layout_margin="3dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
                         android:id="@+id/imageView2"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_gravity="left"
                         android:background="@null"
-                        android:onClick="onTimerPressed"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/f2"
                         tools:ignore="SpeakableTextPresentCheck" />
 
                     <TextView
+                        android:id="@+id/foodItem2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
@@ -177,12 +135,12 @@
                         android:layout_height="100dp"
                         android:layout_gravity="left"
                         android:background="@null"
-                        android:onClick="onTimerPressed"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/f3"
                         tools:ignore="SpeakableTextPresentCheck" />
 
                     <TextView
+                        android:id="@+id/foodItem3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
@@ -222,12 +180,12 @@
                         android:layout_height="100dp"
                         android:layout_gravity="left"
                         android:background="@null"
-                        android:onClick="onTimerPressed"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/f4"
                         tools:ignore="SpeakableTextPresentCheck" />
 
                     <TextView
+                        android:id="@+id/foodItem4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
@@ -266,12 +224,12 @@
                         android:layout_height="100dp"
                         android:layout_gravity="left"
                         android:background="@null"
-                        android:onClick="onTimerPressed"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/f5"
                         tools:ignore="SpeakableTextPresentCheck" />
 
                     <TextView
+                        android:id="@+id/foodItem5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
@@ -310,12 +268,12 @@
                         android:layout_height="100dp"
                         android:layout_gravity="left"
                         android:background="@null"
-                        android:onClick="onTimerPressed"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/f6"
                         tools:ignore="SpeakableTextPresentCheck" />
 
                     <TextView
+                        android:id="@+id/foodItem6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
@@ -355,12 +313,12 @@
                         android:layout_height="100dp"
                         android:layout_gravity="left"
                         android:background="@null"
-                        android:onClick="onTimerPressed"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/f7"
                         tools:ignore="SpeakableTextPresentCheck" />
 
                     <TextView
+                        android:id="@+id/foodItem7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
@@ -399,12 +357,12 @@
                         android:layout_height="100dp"
                         android:layout_gravity="left"
                         android:background="@null"
-                        android:onClick="onTimerPressed"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/f8"
                         tools:ignore="SpeakableTextPresentCheck" />
 
                     <TextView
+                        android:id="@+id/foodItem8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
@@ -443,12 +401,12 @@
                         android:layout_height="100dp"
                         android:layout_gravity="left"
                         android:background="@null"
-                        android:onClick="onTimerPressed"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/f9"
                         tools:ignore="SpeakableTextPresentCheck" />
 
                     <TextView
+                        android:id="@+id/foodItem9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
@@ -488,12 +446,12 @@
                         android:layout_height="100dp"
                         android:layout_gravity="left"
                         android:background="@null"
-                        android:onClick="onTimerPressed"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/f10"
                         tools:ignore="SpeakableTextPresentCheck" />
 
                     <TextView
+                        android:id="@+id/foodItem10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
@@ -532,12 +490,12 @@
                         android:layout_height="100dp"
                         android:layout_gravity="left"
                         android:background="@null"
-                        android:onClick="onTimerPressed"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/f11"
                         tools:ignore="SpeakableTextPresentCheck" />
 
                     <TextView
+                        android:id="@+id/foodItem11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
@@ -576,12 +534,12 @@
                         android:layout_height="100dp"
                         android:layout_gravity="left"
                         android:background="@null"
-                        android:onClick="onTimerPressed"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/f12"
                         tools:ignore="SpeakableTextPresentCheck" />
 
                     <TextView
+                        android:id="@+id/foodItem12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
@@ -621,12 +579,12 @@
                         android:layout_height="100dp"
                         android:layout_gravity="left"
                         android:background="@null"
-                        android:onClick="onTimerPressed"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/f13"
                         tools:ignore="SpeakableTextPresentCheck" />
 
                     <TextView
+                        android:id="@+id/foodItem13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
@@ -665,12 +623,12 @@
                         android:layout_height="100dp"
                         android:layout_gravity="left"
                         android:background="@null"
-                        android:onClick="onTimerPressed"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/f14"
                         tools:ignore="SpeakableTextPresentCheck" />
 
                     <TextView
+                        android:id="@+id/foodItem14"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
@@ -709,12 +667,12 @@
                         android:layout_height="100dp"
                         android:layout_gravity="left"
                         android:background="@null"
-                        android:onClick="onTimerPressed"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/f15"
                         tools:ignore="SpeakableTextPresentCheck" />
 
                     <TextView
+                        android:id="@+id/foodItem15"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
