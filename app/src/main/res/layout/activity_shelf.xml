@@ -254,12 +254,11 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/f2"
+                    android:id="@+id/f0"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@null"
-                    android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/f2"
                     tools:ignore="SpeakableTextPresentCheck" />
@@ -270,17 +269,17 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
                     <TextView
-                        android:id="@+id/st2"
+                        android:id="@+id/st0"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
-                        android:text="5min"
+                        android:text="1min"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
-                        android:id="@+id/sq2"
+                        android:id="@+id/sq0"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -318,12 +317,11 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/f3"
+                    android:id="@+id/f1"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@null"
-                    android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/f3"
                     tools:ignore="SpeakableTextPresentCheck" />
@@ -334,17 +332,17 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
                     <TextView
-                        android:id="@+id/st3"
+                        android:id="@+id/st1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
-                        android:text="5min"
+                        android:text="1min"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
-                        android:id="@+id/sq3"
+                        android:id="@+id/sq1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -362,6 +360,134 @@
 
         <!-- Row 3 -->
         <!-- Column 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="6dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+            android:backgroundTint="@android:color/transparent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_margin="3dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/f2"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/f4"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/st2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:text="5min"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/sq2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_marginLeft="10dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 3 -->
+        <!-- Column 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="6dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+            android:backgroundTint="@android:color/transparent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_margin="3dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/f3"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/f5"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/st3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:text="20min"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/sq3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_marginLeft="10dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 3 -->
+        <!-- Column 3 -->
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -387,10 +513,10 @@
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@null"
-                    android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/f4"
+                    app:srcCompat="@drawable/f6"
                     tools:ignore="SpeakableTextPresentCheck" />
+
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -402,7 +528,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
-                        android:text="5min"
+                        android:text="20min"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="15sp"
@@ -425,8 +551,8 @@
 
         </androidx.cardview.widget.CardView>
 
-        <!-- Row 3 -->
-        <!-- Column 2 -->
+        <!-- Row 4 -->
+        <!-- Column 1 -->
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -452,9 +578,8 @@
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@null"
-                    android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/f5"
+                    app:srcCompat="@drawable/f7"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <LinearLayout
@@ -467,7 +592,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
-                        android:text="5min"
+                        android:text="20min"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="15sp"
@@ -490,8 +615,8 @@
 
         </androidx.cardview.widget.CardView>
 
-        <!-- Row 3 -->
-        <!-- Column 3 -->
+        <!-- Row 4 -->
+        <!-- Column 2 -->
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -517,11 +642,9 @@
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@null"
-                    android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/f6"
+                    app:srcCompat="@drawable/f8"
                     tools:ignore="SpeakableTextPresentCheck" />
-
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -533,7 +656,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
-                        android:text="5min"
+                        android:text="35min"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="15sp"
@@ -557,7 +680,7 @@
         </androidx.cardview.widget.CardView>
 
         <!-- Row 4 -->
-        <!-- Column 1 -->
+        <!-- Column 3 -->
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -583,9 +706,8 @@
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@null"
-                    android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/f7"
+                    app:srcCompat="@drawable/f9"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <LinearLayout
@@ -598,143 +720,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
-                        android:text="5min"
+                        android:text="35min"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
                         android:id="@+id/sq7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal|bottom"
-                        android:layout_marginLeft="10dp"
-                        android:text="0"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <!-- Row 4 -->
-        <!-- Column 2 -->
-        <androidx.cardview.widget.CardView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_marginLeft="6dp"
-            android:layout_marginRight="6dp"
-            android:layout_marginBottom="6dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="0dp"
-            android:backgroundTint="@android:color/transparent">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|bottom"
-                android:layout_margin="3dp"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:id="@+id/f8"
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
-                    android:layout_gravity="center_horizontal"
-                    android:background="@null"
-                    android:onClick="onTimerPressed"
-                    android:scaleType="fitXY"
-                    app:srcCompat="@drawable/f8"
-                    tools:ignore="SpeakableTextPresentCheck" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|bottom"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:id="@+id/st8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal|bottom"
-                        android:text="5min"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-                    <TextView
-                        android:id="@+id/sq8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal|bottom"
-                        android:layout_marginLeft="10dp"
-                        android:text="0"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <!-- Row 4 -->
-        <!-- Column 3 -->
-        <androidx.cardview.widget.CardView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_marginLeft="6dp"
-            android:layout_marginRight="6dp"
-            android:layout_marginBottom="6dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="0dp"
-            android:backgroundTint="@android:color/transparent">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|bottom"
-                android:layout_margin="3dp"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:id="@+id/f9"
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
-                    android:layout_gravity="center_horizontal"
-                    android:background="@null"
-                    android:onClick="onTimerPressed"
-                    android:scaleType="fitXY"
-                    app:srcCompat="@drawable/f9"
-                    tools:ignore="SpeakableTextPresentCheck" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|bottom"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:id="@+id/st9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal|bottom"
-                        android:text="5min"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-                    <TextView
-                        android:id="@+id/sq9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -773,12 +765,11 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/f10"
+                    android:id="@+id/f8"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@null"
-                    android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/f10"
                     tools:ignore="SpeakableTextPresentCheck" />
@@ -789,17 +780,17 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
                     <TextView
-                        android:id="@+id/st10"
+                        android:id="@+id/st8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
-                        android:text="5min"
+                        android:text="35min"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
-                        android:id="@+id/sq10"
+                        android:id="@+id/sq8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -838,12 +829,11 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/f11"
+                    android:id="@+id/f9"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@null"
-                    android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/f11"
                     tools:ignore="SpeakableTextPresentCheck" />
@@ -854,17 +844,17 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
                     <TextView
-                        android:id="@+id/st11"
+                        android:id="@+id/st9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
-                        android:text="5min"
+                        android:text="50min"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
-                        android:id="@+id/sq11"
+                        android:id="@+id/sq9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -903,12 +893,11 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/f12"
+                    android:id="@+id/f10"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@null"
-                    android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/f12"
                     tools:ignore="SpeakableTextPresentCheck" />
@@ -919,17 +908,17 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
                     <TextView
-                        android:id="@+id/st12"
+                        android:id="@+id/st10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
-                        android:text="5min"
+                        android:text="50min"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
-                        android:id="@+id/sq12"
+                        android:id="@+id/sq10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -966,13 +955,12 @@
                 android:layout_margin="3dp"
                 android:orientation="vertical">
 
-                <ImageButton
-                    android:id="@+id/f13"
+                <ImageView
+                    android:id="@+id/f11"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@null"
-                    android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/f13"
                     tools:ignore="SpeakableTextPresentCheck" />
@@ -982,19 +970,20 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
+
                     <TextView
-                        android:id="@+id/st13"
+                        android:id="@+id/st11"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal|bottom"
-                        android:text="5min"
+                        android:text="50min"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/sq13"
+                        android:id="@+id/sq11"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal|bottom"
@@ -1032,13 +1021,12 @@
                 android:layout_margin="3dp"
                 android:orientation="vertical">
 
-                <ImageButton
-                    android:id="@+id/f14"
+                <ImageView
+                    android:id="@+id/f12"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@null"
-                    android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/f14"
                     tools:ignore="SpeakableTextPresentCheck" />
@@ -1049,18 +1037,18 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
                     <TextView
-                        android:id="@+id/st14"
+                        android:id="@+id/st12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
-                        android:text="5min"
+                        android:text="65min"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/sq14"
+                        android:id="@+id/sq12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"
@@ -1098,13 +1086,12 @@
                 android:layout_margin="3dp"
                 android:orientation="vertical">
 
-                <ImageButton
-                    android:id="@+id/f15"
+                <ImageView
+                    android:id="@+id/f13"
                     android:layout_width="65dp"
-                    android:layout_height="49dp"
+                    android:layout_height="65dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@null"
-                    android:onClick="onTimerPressed"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/f15"
                     tools:ignore="SpeakableTextPresentCheck" />
@@ -1114,19 +1101,20 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|bottom"
                     android:orientation="horizontal">
+
                     <TextView
-                        android:id="@+id/st15"
+                        android:id="@+id/st13"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal|bottom"
-                        android:text="5min"
+                        android:text="65min"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/sq15"
+                        android:id="@+id/sq13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|bottom"

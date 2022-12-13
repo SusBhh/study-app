@@ -28,6 +28,7 @@ public class TimerActivity extends AppCompatActivity {
     private long mStartTimeInMillis;
     private long mTimeLeftInMillis;
     private long mEndTime;
+    private long mTimerTempMinute;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,7 @@ public class TimerActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String input = mEditTextInput.getText().toString();
+                mTimerTempMinute = Long.parseLong(mEditTextInput.getText().toString());
                 if (input.length() == 0) {
                     Toast.makeText(TimerActivity.this, "Field can't be empty", Toast.LENGTH_SHORT).show();
                     return;
@@ -103,6 +105,29 @@ public class TimerActivity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
+
+                //edit quantity of food
+                int foodGot = 0, newQuantity = 0;
+                TextView quantityText = findViewById(R.id.sq13);
+                if (0 < mTimerTempMinute) {
+                    foodGot = (int)Math.random()*(3);
+                    //mTimerTempMinute <= 5 //0,1
+                    if (5 <= mTimerTempMinute && mTimerTempMinute < 20) {
+                        foodGot = 2; //2
+                    } else if (20 <= mTimerTempMinute && mTimerTempMinute < 35) {
+                        foodGot += 3;//3,4,5
+                    } else if (35 <= mTimerTempMinute && mTimerTempMinute < 50) {
+                        foodGot += 6;//6,7,8
+                    } else if (50 <= mTimerTempMinute && mTimerTempMinute < 65) {
+                        foodGot += 9;//9,10,11
+                    } else if (65 < mTimerTempMinute) {
+                        foodGot += 12;//12,13
+                    }
+                }
+                Log.d("foodGot", Integer.toString(foodGot));
+                newQuantity = ShelfActivity.FoodsList.get(foodGot).getQuantity() + 1;
+                ShelfActivity.FoodsList.get(foodGot).setQuantity(newQuantity);
+                ShelfActivity.foodQuanText.get(foodGot).setText(Integer.toString(newQuantity));
                 mTimerRunning = false;
                 updateWatchInterface();
             }
@@ -196,7 +221,6 @@ public class TimerActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-
         SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
 
         mStartTimeInMillis = prefs.getLong("startTimeInMillis", 600000);
@@ -215,6 +239,8 @@ public class TimerActivity extends AppCompatActivity {
                 mTimerRunning = false;
                 updateCountDownText();
                 updateWatchInterface();
+
+
             } else {
                 startTimer();
             }
