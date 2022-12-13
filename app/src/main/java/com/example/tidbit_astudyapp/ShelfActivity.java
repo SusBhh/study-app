@@ -12,6 +12,7 @@ import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 
 import java.util.Vector;
 
@@ -27,7 +28,9 @@ public class ShelfActivity extends AppCompatActivity {
     private Sensor sensorLight;
 
     // Foods array
-    private Vector<FoodItem> FoodsList = new Vector<FoodItem>(14);
+    public static Vector<FoodItem> FoodsList = new Vector<FoodItem>(14);
+
+    public static Vector<TextView> foodQuanText = new Vector<TextView>(14);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,11 +61,46 @@ public class ShelfActivity extends AppCompatActivity {
 
         // Create Foods List
         int timeCount = 0;
-        for(int i = 1; i <= 15; i++) {
-            String tempFoodId = "f" + Integer.toString(i);
-            if(i % 3 == 0) {timeCount += 15;}
-            FoodItem tempFoodItem = new FoodItem(tempFoodId, timeCount);
+        for(int i = 0; i <= 13; i++) {
+            //String tempFoodId = "f" + Integer.toString(i);
+            if(i == 2) {timeCount += 5;}
+            else if(i % 3 == 0) {timeCount += 15;}
+            FoodItem tempFoodItem = new FoodItem(i, timeCount);
             FoodsList.add(tempFoodItem);
+        }
+
+        // Create foodQuanText List
+        TextView tempTextView = findViewById(R.id.sq0);
+        for (int i = 0; i < 14; i++) {
+            foodQuanText.add(tempTextView);
+            if(i == 0)
+                foodQuanText.set(0, findViewById(R.id.sq0));
+            else if (i == 1)
+                foodQuanText.set(1, findViewById(R.id.sq1));
+            else if (i == 2)
+            foodQuanText.set(2, findViewById(R.id.sq2));
+            else if (i == 3)
+            foodQuanText.set(3, findViewById(R.id.sq3));
+            else if (i == 4)
+            foodQuanText.set(4, findViewById(R.id.sq4));
+            else if (i == 5)
+            foodQuanText.set(5, findViewById(R.id.sq5));
+            else if (i == 6)
+            foodQuanText.set(6, findViewById(R.id.sq6));
+            else if (i == 7)
+            foodQuanText.set(7, findViewById(R.id.sq7));
+            else if (i == 8)
+            foodQuanText.set(8, findViewById(R.id.sq8));
+            else if (i == 9)
+            foodQuanText.set(9, findViewById(R.id.sq9));
+            else if (i == 10)
+            foodQuanText.set(10, findViewById(R.id.sq10));
+            else if (i == 11)
+            foodQuanText.set(11, findViewById(R.id.sq11));
+            else if (i == 12)
+            foodQuanText.set(12, findViewById(R.id.sq12));
+            else if (i == 13)
+            foodQuanText.set(13, findViewById(R.id.sq13));
         }
 
     }
