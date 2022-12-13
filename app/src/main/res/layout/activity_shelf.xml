@@ -84,7 +84,6 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:text="Profile"
                     android:textAlignment="gravity"
-                    android:textColor="@android:color/black"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
@@ -132,7 +131,6 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:text="List"
                     android:textAlignment="gravity"
-                    android:textColor="@android:color/black"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
@@ -178,7 +176,6 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:text="Cookbook"
                     android:textAlignment="gravity"
-                    android:textColor="@android:color/black"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
@@ -224,7 +221,6 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:text="Timer"
                     android:textAlignment="gravity"
-                    android:textColor="@android:color/black"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
@@ -276,7 +272,6 @@
                         android:layout_gravity="center_horizontal|bottom"
                         android:text="5min"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
@@ -287,7 +282,6 @@
                         android:layout_marginLeft="10dp"
                         android:text="0"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -340,7 +334,6 @@
                         android:layout_gravity="center_horizontal|bottom"
                         android:text="5min"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
@@ -351,7 +344,6 @@
                         android:layout_marginLeft="10dp"
                         android:text="0"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -404,7 +396,6 @@
                         android:layout_gravity="center_horizontal|bottom"
                         android:text="5min"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
@@ -415,7 +406,6 @@
                         android:layout_marginLeft="10dp"
                         android:text="0"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -469,7 +459,6 @@
                         android:layout_gravity="center_horizontal|bottom"
                         android:text="5min"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
@@ -480,7 +469,6 @@
                         android:layout_marginLeft="10dp"
                         android:text="0"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -535,7 +523,6 @@
                         android:layout_gravity="center_horizontal|bottom"
                         android:text="5min"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
@@ -546,7 +533,6 @@
                         android:layout_marginLeft="10dp"
                         android:text="0"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -600,7 +586,6 @@
                         android:layout_gravity="center_horizontal|bottom"
                         android:text="5min"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
@@ -611,7 +596,6 @@
                         android:layout_marginLeft="10dp"
                         android:text="0"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -665,7 +649,6 @@
                         android:layout_gravity="center_horizontal|bottom"
                         android:text="5min"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
@@ -676,7 +659,6 @@
                         android:layout_marginLeft="10dp"
                         android:text="0"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -730,7 +712,6 @@
                         android:layout_gravity="center_horizontal|bottom"
                         android:text="5min"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
@@ -741,7 +722,6 @@
                         android:layout_marginLeft="10dp"
                         android:text="0"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -795,7 +775,6 @@
                         android:layout_gravity="center_horizontal|bottom"
                         android:text="5min"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
@@ -806,7 +785,6 @@
                         android:layout_marginLeft="10dp"
                         android:text="0"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -860,7 +838,6 @@
                         android:layout_gravity="center_horizontal|bottom"
                         android:text="5min"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
@@ -871,7 +848,6 @@
                         android:layout_marginLeft="10dp"
                         android:text="0"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -925,7 +901,6 @@
                         android:layout_gravity="center_horizontal|bottom"
                         android:text="5min"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
                     <TextView
@@ -936,7 +911,6 @@
                         android:layout_marginLeft="10dp"
                         android:text="0"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -989,7 +963,6 @@
                         android:layout_gravity="center_horizontal|bottom"
                         android:text="5min"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -1001,7 +974,6 @@
                         android:layout_marginLeft="10dp"
                         android:text="0"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -1055,7 +1027,6 @@
                         android:layout_gravity="center_horizontal|bottom"
                         android:text="5min"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -1067,7 +1038,6 @@
                         android:layout_marginLeft="10dp"
                         android:text="0"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -1121,7 +1091,6 @@
                         android:layout_gravity="center_horizontal|bottom"
                         android:text="5min"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -1133,7 +1102,6 @@
                         android:layout_marginLeft="10dp"
                         android:text="0"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
